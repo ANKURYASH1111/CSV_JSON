@@ -6,7 +6,7 @@ Resources:
       Role: !GetAtt GlueServiceRole.Arn
       Command:
         Name: glueetl
-        ScriptLocation: s3://lalla1111/tee/salary/CSV_JSON.py
+        ScriptLocation: s3://lalla1111/tee/scripts/CSV_JSON.py
       DefaultArguments:
         "--TempDir": "s3://lalla1111/tee/salary/temp/"
       GlueVersion: "2.0"
